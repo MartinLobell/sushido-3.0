@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushido</title>
+    <link rel="icon" href="images/smallLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="images/logo.png" id="0"  onclick="clickScroll(this.id)"/>
+        </h1>
+        <nav>
+            <ul>
+                <li><a id="0" href="#order" onclick="clickScroll(this.id)">BESTÄLL</a></li>
+                <li><a id="1" href="#about" onclick="clickScroll(this.id)">CATERING</a></li>
+                <li><a id="2" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a></li>
+                <li><a id="3" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a></li>
+                <li><a id="4" href="#find" onclick="clickScroll(this.id)">OM OSS</a></li>
+                <li><a id="5" href="#about" onclick="clickScroll(this.id)">FÖLJ OSS</a></li>
+                <li><a id="6" href="#about" onclick="clickScroll(this.id)">JOBBA HOS OSS</a></li>
+            </ul>
+        </nav>
+        <div class="buttonSection">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="showLinks()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="dropdownContent">
+                    <a id="0" href="#order" onclick="clickScroll(this.id)">BESTÄLL</a>
+                    <a id="1" href="#about" onclick="clickScroll(this.id)">CATERING</a>
+                    <a id="2" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a>
+                    <a id="3" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a>
+                    <a id="4" href="#find" onclick="clickScroll(this.id)">OM OSS</a>
+                    <a id="5" href="#about" onclick="clickScroll(this.id)">FÖLJ OSS</a>
+                    <a id="6" href="#about" onclick="clickScroll(this.id)">JOBBA HOS OSS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainSections" id="restaurantSection">
+            <div class="restaurants">
+                <a href="https://web.trueapp.se/sushido/store1/">
+                    <h2>RÖRSJÖSTADEN</h2>
+                </a>
+            </div>
+            <div class="restaurants">
+                <a href="https://web.trueapp.se/sushido/store3/">
+                    <h2>SLOTTSTADEN</h2>
+                </a>
+            </div>
+        </div>
+        <div class="mainSections centerContent" id="cateringSection">
+            <div class="imgSection"></div>
+            <div class="textSection fadeIn">
+                <h2>
+                    CATE<br id="bigBr" />RING
+                </h2>
+
+                <p>
+                    Vi har färdiga menyer som är anpassade för såväl små som stora sällskap, 
+                    men vi ser alltid till att ordna speciallösningar efter era önskemål.
+                </p>
+            </div>
+        </div>
+        <div class="mainSections fullSection centerContent" id="companySection">
+            <div class="textSection fadeIn">
+                <p>
+                    Har ni ett företag kan ni beställa mat från oss och betala på faktura. 
+                    Skicka en ansökan med företagsnamn, org.nr och alla kontaktuppgifter.<br />
+                    Vi levererar ofta till konferenser, möten och andra företagsarrangemang.
+                </p>
+                <h2>
+                    FÖRE<br id="bigBr" />TAG
+                </h2>
+            </div>
+        </div>
+        <div class="mainSections centerContent" id="findSection">
+            <div class="imgSection"></div>
+            <div class="textSection fadeIn">
+                <h2>HITTA<br id="bigBr" /> OSS</h2>
+                <div id="openingHours">
+
+                    <!-- HÄR NEDAN ÄR ÖPPETTIDERNA -->
+                    <div class="timeSigns">
+                        <div>
+                            <h3>Rörsjöstaden</h3>
+                            <p>
+                                <strong>Föreningsgatan 43</strong><br />
+                                Mån-Fre: &emsp; 11:30-20:00<br />
+                                Lör-Sön: &emsp; &hairsp; 13:00-20:00<br />
+                                <br />
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Slottstaden</h3>
+                            <p>
+                                <strong>Skvadronsgatan 14</strong><br />
+                                Mån-Tors: &emsp; 16:00-20:00<br />
+                                Fre-Sön: &emsp; &nbsp; 13:00-20:00<br />
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+                    <a class="mapLink" href="https://www.google.se/maps/search/sushido+malm%C3%B6/@55.6045831,12.9977444,14.5z" target="_blank"><span>Karta</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="mainSections fullSection centerContent" id="aboutSection">
+            <div class="textSection fadeIn">
+                <p>
+                    Sushido har funnits sedan 2005 och har tre restauranger i Malmö.
+                    Vår ambition har alltid varit att serva våra kunder med fräsch mat, 
+                    gjord på de bästa råvarorna samt leverera snabb service och till bra priser.<br />
+                    Vi jobbar ständigt med att minska miljöpåverkan och har som exempel 
+                    svenskproducerade sushiemballage i papp av 100% svenskt material.
+                </p>
+                <h2>
+                    OM<br id="bigBr" /> OSS
+                </h2>
+            </div>
+        </div>
+        <div class="mainSections centerContent" id="followSection">
+            <div class="imgSection"></div>
+            <div class="textSection fadeIn">
+                <h2>FÖLJ<br id="bigBr" /> OSS</h2>
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/SUSHIDOMALMO" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/sushidomalmo/?hl=sv" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="mainSections fullSection centerContent" id="workSection">
+            <div class="textSection fadeIn">
+                <p>
+                    Vi söker alltid efter nästa stjärna i köket eller ute bland kunderna. 
+                    Skicka ansökan med cv så återkommer vi när en öppning kommer. 
+                    Erfarenhet av branschen är ett plus, men främst är det din personlighet 
+                    och engagemang som är avgörande.<br /><br />
+                    Skicka ansökan till <a href="mailto:kontakt@sushido.se">kontakt@sushido.se</a>
+                </p>
+                <h2 id="withUs">
+                    JOBBA<br id="bigBr" />
+                    HOS OSS
+                </h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerSections store">
+            <a href="https://play.google.com/store/apps/details?id=se.kassacentralen.sushido&hl=sv" target="_blank"><img src="images/googlePlay.png" /></a>
+            <a href="https://apps.apple.com/in/app/sushido-app/id1531680638" target="_blank"><img src="images/appStore.png" /></a>
+        </div>
+        <div class="footerSections" id="copyright">
+            <p>© Sushido AB</p>
+        </div>
+        <div class="footerSections" id="contact">
+            <p>
+                <span>Telefon</span><br />
+                <a href="tel:040-303737">040-303737</a>
+            </p>
+            <p>
+                <span>E-mail</span><br />
+                <a href="mailto:kontakt@sushido.se">kontakt@sushido.se</a>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

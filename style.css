@@ -1,0 +1,750 @@
+@font-face {
+    font-family: 'sushiFont';
+    src: url('fonts/sushiFont.otf')
+}
+
+html, body {
+    font-family: 'sushiFont', sans-serif;
+    background: #131313;
+    margin: 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+    /* Header start */
+
+header {
+    position: fixed;
+    background: #131313;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+header h1 {
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+header h1 img {
+    height: 30px;
+    padding: 20px;
+    margin-left: 100px;
+    float: left;
+}
+
+header nav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+}
+
+header  nav  ul  li {
+    height: 70px;
+    display: inline-block;
+}
+
+header  nav  ul  li  a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 27px 16px 0;
+}
+
+header  nav  ul  li  a:hover {
+    transition: 0.6s;
+    color: #8a8a8a;
+}
+
+    /* Hamburger menu start */
+
+.buttonSection {
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: none;
+}
+
+.dropbtn {
+    background: #131313;
+    color: white;
+    padding: 20px;
+    margin-right: 100px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 70px;
+    right: 30px;
+    text-align: center;
+}
+
+#dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdownContent a:hover {
+    background-color: #f1f1f1
+}
+
+.dropbtn:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+    /* Main section, general rules */
+
+main {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.mainSections {
+    height: 700px;
+    background: #000;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    display: flex;
+}
+
+.mainSections h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.imgSection {
+    width: 50%;
+    height: 700px;
+}
+
+.textSection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.textSection h2 {
+    text-align: right;
+    font-size: 10vw;
+    font-weight: lighter;
+    width: 40%;
+    border-right: solid 10px #fff;
+    line-height: 1;
+    padding: 5%;
+    margin: auto;
+}
+
+.textSection p {
+    font-size: 1.7vw;
+    width: 40%;
+    padding: 5%;
+    text-shadow: 2px 2px #000;
+}
+
+.fullSection {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fullSection .textSection {
+    margin-right: 50%;
+}
+
+.mainSections.fullSection .textSection p {
+    text-align: right;
+}
+
+.mainSections.fullSection .textSection h2 {
+    border-right: none;
+    border-left: solid 10px #fff;
+    text-align: left;
+}
+
+    /* Restaurant section */
+
+#restaurantSection {
+    background: url("images/restaurantsImg.png");
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurants {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.restaurants a:hover  {
+    transition: 0.6s;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.restaurants a:hover h2 {
+    transition: 0.6s;
+    color: #585858;
+}
+
+.restaurants a {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+.restaurants a h2 {
+    font-size: 5vw;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Catering section */
+
+#cateringSection .imgSection {
+    background: url("images/cateringImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+
+    /* Company section */
+
+#companySection {
+    background: url('images/companyImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+    /* Find us section */
+
+#findSection .imgSection {
+    background: url("images/findUsImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: auto;
+}
+
+#findSection .textSection #openingHours {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#findSection .textSection #openingHours p {
+    font-size: 1.5vw;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#findSection .textSection #openingHours p strong,
+#findSection .textSection #openingHours h3 {
+    text-align: center;
+}
+
+#findSection .textSection h3 {
+    font-size: 2.5vw;
+    margin-bottom: 0;
+}
+
+.mapLink {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5vw;
+    font-family: 'sushiFont', sans-serif;
+    background: #fff;
+    border: solid 5px #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.mapLink span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.mapLink span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.mapLink:hover span {
+    padding-right: 25px;
+}
+
+.mapLink:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+            
+#findSection .textSection a:hover {
+    background: url('images/map.png');
+}
+
+#openingHours {
+    display: flex;
+}
+
+    /* About section */
+
+#aboutSection {
+    background: url('images/aboutImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+    /* Follow section */
+
+#followSection  .imgSection {
+    background: url("images/followImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: auto;
+    float: left;
+}
+
+#followSection  .textSection {
+    float: right;
+}
+
+#followSection .textSection .socialMedia {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#followSection .textSection h2 {
+    margin-right: 0;
+}
+
+#followSection .textSection .socialMedia a {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    font-size: 50px;
+}
+    
+        /* Work section */
+    
+#workSection {
+    background: url('images/workImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#workSection p  {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#workSection p a {
+    color: #fff;
+}
+
+#workSection p a:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+h2#withUs {
+    font-size: 6vw;
+}
+
+    /* Footer start */
+
+footer {
+    width: 100%;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer .store {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+footer .store a, footer .store a img {
+    max-width: 200px;
+    margin: auto;
+}
+
+footer .store a img:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.socialMedia  .fa {
+    padding: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.socialMedia  .fa:hover {
+    transition: 0.6s;
+    background: none;
+    color: #fff;
+}
+
+.fa-facebook {
+    background: #fff;
+    color: #131313;
+}
+
+.fa-instagram {
+    background: #fff;
+    color: #131313;
+}
+
+.footerSections {
+    width: 33.33%;
+}
+
+.footerSections  p {
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footerSections  p  span {
+    font-size: 22px;
+}
+
+#copyright {
+    margin: auto;
+    margin-bottom: 0;
+}
+
+#contact {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+#contact  p  a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact  p  a:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+    /* Footer end */
+
+    /* Only for desktop screens and bigger */
+
+@media (min-width: 993px) {
+
+    .fadeIn {
+        opacity: 0;
+    }
+}
+    
+    /* Applied to screens smaller than desktop screens */
+    
+@media (max-width: 1130px) {
+
+    nav {
+        display: none;
+    }
+
+    .buttonSection {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        display: flex;
+    }
+
+    header h1 {
+        width: 50%;
+    }
+
+    .mainSections.fullSection .textSection h2 {
+        text-align: center;
+    }
+
+    .fullSection .textSection {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #restaurantSection {
+        display: inline-block;
+    }
+
+    .restaurants {
+        width: 100%;
+        height: 50%;
+    }
+
+    .restaurants a {
+        display: flex;
+
+        justify-items: center;
+    }
+
+    .restaurants a h2 {
+        position: relative;
+        font-size: 10vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .imgSection {
+        width: 100%;
+    }
+
+    #followSection .textSection h2 {
+        margin-right: auto;
+    }
+
+    #followSection .textSection .socialMedia {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .textSection {
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    br#bigBr {
+        display: none;
+    }
+
+    .textSection h2 {
+        border: 0;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 0;
+        border-bottom: solid 10px #fff;
+    }
+
+    .textSection p, .mainSections.fullSection .textSection p {
+        width: 80%;
+        font-size: 4vw;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: left;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .mainSections.fullSection .textSection h2 {
+        border-left: 0;
+    }
+
+    #findSection .textSection #openingHours {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #findSection .textSection #openingHours div {
+        width: 40%;
+        margin: 0 5px;
+    }
+
+    #findSection .textSection #openingHours h3 {
+        font-size: 4vw;
+    }
+
+    #findSection .textSection #openingHours p, #findSection .textSection #openingHours a {
+        font-size: 2vw;
+    }
+
+    #findSection .textSection #openingHours p {
+        margin: 5px;
+        text-align: center;
+    }
+
+    #findSection .textSection #openingHours a {
+        width: 100%;
+    }
+
+    #findSection .textSection #openingHours {
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #findSection .textSection #openingHours .timeSigns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #findSection .textSection #openingHours .timeSigns div {
+        text-align: left;
+        border: solid 5px #fff;
+        background: #000;
+        width: 50%;
+    }
+
+    #findSection .textSection #openingHours .mapLink {
+        width: calc(100% - 20px);
+        margin: 10px 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    h2#withUs {
+        font-size: 10vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer  .footerSections {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .textSection p, .mainSections.fullSection .textSection p { 
+        font-size: 6vw;
+    }
+
+    #findSection .textSection #openingHours .timeSigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #findSection .textSection #openingHours .timeSigns div {
+        width: calc(70% - 10px);
+        margin: auto 0;
+    }
+
+    #findSection .textSection #openingHours .timeSigns div h3 {
+        font-size: 5vw;
+    }
+
+    #findSection .textSection #openingHours .timeSigns div p { 
+        font-size: 4vw;
+    }
+
+    #findSection .textSection #openingHours .mapLink {
+        width: calc(70% - 10px);
+    }
+}
+
+@media only screen and (max-width: 445px) { 
+    
+    header h1 img {
+        margin-left: 0;
+    }
+
+    header .dropbtn {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .textSection p, .mainSections.fullSection .textSection p { 
+        font-size: 7vw;
+    }
+
+    #findSection .textSection #openingHours .timeSigns div {
+        width: calc(100% - 10px);
+    }
+}
