@@ -638,8 +638,12 @@ footer .store a img:hover {
         font-size: 4vw;
     }
 
-    #findSection .textSection #openingHours p, #findSection .textSection #openingHours a {
+    #findSection .textSection #openingHours p {
         font-size: 2vw;
+    }
+
+    #findSection .textSection #openingHours a {
+        font-size: 4vw;
     }
 
     #findSection .textSection #openingHours p {
@@ -720,6 +724,7 @@ footer .store a img:hover {
 
     #findSection .textSection #openingHours .timeSigns div p { 
         font-size: 4vw;
+        padding: 0;
     }
 
     #findSection .textSection #openingHours .mapLink {
