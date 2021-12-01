@@ -515,6 +515,15 @@ footer .store a img:hover {
         opacity: 0;
     }
 }
+
+    /* Only for larger screens */
+
+@media (min-width: 1800px) {
+
+    #findSection .textSection #openingHours p {
+        font-size: 1vw;
+    }
+}
     
     /* Applied to screens smaller than desktop screens */
     
