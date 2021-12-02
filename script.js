@@ -32,4 +32,5 @@ function showLinks() {
 // Go to associated section when clicking menu item.
 function clickScroll(clickedId) {
     document.getElementsByClassName('mainSections')[clickedId].scrollIntoView({behavior: "smooth"});
+    showLinks();
 }
